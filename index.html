@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+
+	<title>Portfolio</title>
+
+</head>
+<body>
+
+
+	<!---Start--->
+	<div class="section1">
+		<header>
+			<h2 class="logo">Marcus Aurelius</h2>
+			<ul>
+				<li><a href="#one"><span class="navigate">Palace</span></a></li>
+				<li><a href="#two"><span class="navigate" href="#two">My history</span></a></li>
+				<li><a href="#three"><span class="navigate" href="#three">My Abilities</span></a></li>
+				<li><a href="#four"><span class="navigate" href="#four">Send me a letter</span></a></li>
+			</ul>
+			<a href="#" class="btn">Daily News</a>
+		</header>
+
+		<section  id="one" class="background"></section>
+
+		<script>
+			document.addEventListener("scroll", () => {
+				const header = document.querySelector('header');
+
+				if (window.scrollY > 0) {
+					header.classList.add('scrolled')
+				}
+				else{
+					header.classList.remove('scrolled')
+				}
+			})	
+		</script>
+
+
+
+	<!---Home--->	
+
+		<div class="content">
+			<h1>Marcus Aurelius</h1>
+		</div>
+	</div>
+
+
+	<!---About section--->
+	<div class="section2">
+		<section id="two" class="about">
+			<div class="main">
+				<img src="img1.png">
+					<div class="abouttxt">
+						<h2>My history</h2>
+						<h5>Emperor and Philosopher</h5>
+						<p>I shall endeavor to convey a summary of my life and legacy in a manner consistent with my own writings. As a Roman Emperor, I faced numerous challenges and sought to serve the people to the best of my ability through military campaigns, legal reforms, and public welfare efforts. My education in Stoic philosophy was a significant influence on my life and leadership, and I authored "Meditations," which has become a classic work of philosophy offering insights on how to live a good life and find inner peace. I strived to embody the virtues of wisdom, courage, and compassion, and was a devoted husband and father. Although my earthly life has come to an end, I hope that my life and writings continue to inspire and influence future generations..</p>
+						<button type="button">Send me a letter</button>
+					</div>
+				</div>
+		</section>
+
+
+		<!---Service section--->
+
+		<div id="three" class="service">
+			<div class="title">
+				<h2>My Abilities</h2>
+			</div>
+
+			<div class="box">
+				<div class="card">
+					<i class="fa-solid fa-crown"></i>
+					<h5>Leadership</h5>
+					<div class="pra">
+						<p>As a Roman Emperor, Marcus Aurelius demonstrated exceptional leadership skills, directing military campaigns and implementing legal reforms that were aimed at improving the lives of his subjects.</p>
+
+						<p style="text-align: center;">
+							<a class="button" href="#">Read More</a>
+						</p>
+					</div>
+				</div>
+
+				<div class="card">
+					<i class="fa-solid fa-book"></i>
+					<h5>Philosophy</h5>
+					<div class="pra">
+						<p>Marcus Aurelius was well-versed in Stoic philosophy, which was a significant influence on his life and reign. He authored "Meditations," a book that has become a classic work of philosophy.</p>
+
+						<p style="text-align: center;">
+							<a class="button" href="#">Read More</a>
+						</p>
+					</div>
+				</div>
+
+				<div class="card">
+					<i class="fa-solid fa-feather"></i>
+					<h5>Self-Discipline</h5>
+					<div class="pra">
+						<p>Marcus Aurelius was known for his self-discipline, which he practiced in various aspects of his life. He was committed to his duties as emperor and remained humble in the face of success and adversity.</p>
+
+						<p style="text-align: center;">
+							<a class="button" href="#">Read More</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<!---Content part three--->
+
+		<div id="four" class="contact-me">
+			<p>Dear friend, I would be most grateful if you could send me a letter.</p>
+			<a class="button-two" href="#">Send me a letter</a>
+		</div>
+
+
+		<!---Footer Start--->
+
+		<footer>
+			<p>Marcus Aurelius</p>
+			<p>Marcus Aurelius embodied wisdom, courage, and compassion in leadership and philosophy.</p>
+			<div class="social">
+				<a href="#"><i class="fa-solid fa-dove"></i></a>
+				<a href="#"><i class="fa-brands fa-pagelines"></i></a>
+				<a href="#"><i class="fa-solid fa-book-bookmark"></i></a>
+			</div>
+			<p class="end">CopyRight By Diego Anton</p>
+		</footer>
+	</div>
+</body>
+</html>
